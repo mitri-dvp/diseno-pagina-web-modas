@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lemonade</title>
-  <link rel="stylesheet" href="./css/style.css">
   <link rel="shortcut icon" href="./assets/icon.svg" type="image/x-icon">
+  <title>Lemonade</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.min.css" />
+  <link rel="stylesheet" href="./css/slider.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
   <header class="header_container">
     <div class="header_content">
@@ -17,12 +21,11 @@
       </a>
       <nav class="desktop_nav">
         <a href="#">Inicio</a>
-        <a href="#news">Novedades</a>
+        <a href="#about">Nosotros</a>
+        <a href="#new">Novedades</a>
         <a href="#trends">Tendencias</a>
-        <a href="#desses">Vestidos</a>
-        <a href="#clothes">Ropa</a>
-        <a href="#accesories">Accesorios</a>
-        <a href="#sales">Ofertas</a>
+        <a href="#sale">Ofertas</a>
+        <a href="#contact">Contacto</a>
       </nav>
       <button class="mobile_button">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -30,26 +33,243 @@
         </svg>
       </button>
       <nav class="mobile_nav">
-        <a href="#">inicio</a>
-        <a href="#about">sobre nosotros</a>
-        <a href="#bitcoin">bitcoin</a>
-        <a href="#blockchain">Tendencia</a>
-        <a href="#buy">compra</a>
-        <a href="#use">uso</a>
+        <a href="#">Inicio</a>
+        <a href="#about">Nosotros</a>
+        <a href="#new">Novedades</a>
+        <a href="#trends">Tendencias</a>
+        <a href="#sale">Ofertas</a>
+        <a href="#contact">Contacto</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section>
-
+    <section class="hero">
+      <div class="root">
+        <h1>Lemonade</h1>
+        <p>Tu tienda de modas</p>
+        <a href="#about">Ver más</a>
+      </div>
     </section>
+
+    <section id="about" class="about">
+      <div class="body">
+        <div class="image">
+          <img src="./assets/about.jpg" alt="">
+        </div>
+        <div class="content">
+          <h1>Sobre Nosotros</h1>
+          <p>El guardarropa de una mujer es su oportunidad para destacar y causar una primera impresión duradera. Para mantener a nuestros clientes con estilo, publicamos los recién llegados todos los días, así como también ofrecemos un listado de tendencias para ayudar a los compradores indecisos. Lemonade es el mejor lugar para los amantes de la moda para crear el guardarropa de verano perfecto.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="new" class="new">
+      <div class="body">
+        <h1 class="title">Novedades</h1>
+        <div class="slider_container new">
+          <div id="new_slider" class="keen-slider">
+            <div class="keen-slider__slide slide">
+              <div class="body">
+                <img src="./assets/models/1.jpg" alt="">
+                <h1>Shorts con tirantes y dobladillo con volantes florales Ditsy</h1>
+                <h2>$10.00</h2>
+              </div>
+            </div>
+            <div class="keen-slider__slide slide">
+              <div class="body">
+                <img src="./assets/models/2.jpg" alt="">
+                <h1>Traje de baño con volantes</h1>
+                <h2>$15.00</h2>
+              </div>
+            </div>
+            <div class="keen-slider__slide slide">
+              <div class="body">
+                <img src="./assets/models/3.jpg" alt="">
+                <h1>Top corto con cuello cuadrado fruncido de malla a lunares rojo</h1>
+                <h2>$12.00</h2>
+              </div>
+            </div>
+            <div class="keen-slider__slide slide">
+              <div class="body">
+                <img src="./assets/models/4.jpg" alt="">
+                <h1>Vestido skater con tirantes y fruncido floral Ditsy</h1>
+                <h2>$10.00</h2>
+              </div>
+            </div>
+            <div class="keen-slider__slide slide">
+              <div class="body">
+                <img src="./assets/models/5.jpg" alt="">
+                <h1>Top de bikini de triángulo Essentials</h1>
+                <h2>$8.00</h2>
+              </div>
+            </div>
+            <div class="keen-slider__slide slide">
+              <div class="body">
+                <img src="./assets/models/6.jpg" alt="">
+                <h1>Top corto de bikini con hombros anudados Essentials</h1>
+                <h2>$8.00</h2>
+              </div>
+            </div>
+          </div>
+          <svg id="new-arrow-left" class="arrow arrow--left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"></path>
+          </svg>
+          <svg id="new-arrow-right" class="arrow arrow--right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"></path>
+          </svg>
+          <div id="new-dots" class="dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="trends" class="trends">
+      <div class="body">
+        <h1 class="title">Tendencias</h1>
+        <div class="slider_container new">
+          <div id="trends_slider" class="keen-slider">
+            <div class="keen-slider__slide slide">
+              <div class="body">
+                <img src="./assets/models/7.jpg" alt="">
+                <h1>Conjunto de playa de malla Tropicana</h1>
+                <h2>$20.00</h2>
+              </div>
+            </div>
+            <div class="keen-slider__slide slide">
+              <div class="body">
+                <img src="./assets/models/8.jpg" alt="">
+                <h1>Top de canalé con cuello halter</h1>
+                <h2>$15.00</h2>
+              </div>
+            </div>
+            <div class="keen-slider__slide slide">
+              <div class="body">
+                <img src="./assets/models/9.jpg" alt="">
+                <h1>Chaqueta vaquera extragrande con patchwork y bandana</h1>
+                <h2>$40.00</h2>
+              </div>
+            </div>
+            <div class="keen-slider__slide slide">
+              <div class="body">
+                <img src="./assets/models/10.jpg" alt="">
+                <h1>Vestido skater con tirantes y fruncido floral Ditsy</h1>
+                <h2>$25.00</h2>
+              </div>
+            </div>
+            <div class="keen-slider__slide slide">
+              <div class="body">
+                <img src="./assets/models/11.jpg" alt="">
+                <h1>Mono corto con cuello abotonado</h1>
+                <h2>$18.00</h2>
+              </div>
+            </div>
+            <div class="keen-slider__slide slide">
+              <div class="body">
+                <img src="./assets/models/12.jpg" alt="">
+                <h1>Mono de pierna ancha con abertura en el busto y tirantes</h1>
+                <h2>$15.00</h2>
+              </div>
+            </div>
+          </div>
+          <svg id="trends-arrow-left" class="arrow arrow--left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"></path>
+          </svg>
+          <svg id="trends-arrow-right" class="arrow arrow--right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"></path>
+          </svg>
+          <div id="trends-dots" class="dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sale" class="sale">
+      <div class="body">
+        <h1 class="title">Ofertas</h1>
+        <div class="slider_container new">
+          <div id="sale_slider" class="keen-slider">
+            <div class="keen-slider__slide slide">
+              <div class="body">
+                <img src="./assets/models/13.jpg" alt="">
+                <h1>Body de doble capa</h1>
+                <h2><span>$14.00</span>$11.00</h2>
+              </div>
+            </div>
+            <div class="keen-slider__slide slide">
+              <div class="body">
+                <img src="./assets/models/14.jpg" alt="">
+                <h1>Conjunto de juntas tóricas con estampado de cebra</h1>
+                <h2><span>$25.00</span>$10.00</h2>
+              </div>
+            </div>
+            <div class="keen-slider__slide slide">
+              <div class="body">
+                <img src="./assets/models/15.jpg" alt="">
+                <h1>Falda de conjunto con volantes y aberturas florales</h1>
+                <h2><span>$30.00</span>$18.00</h2>
+              </div>
+            </div>
+            <div class="keen-slider__slide slide">
+              <div class="body">
+                <img src="./assets/models/16.jpg" alt="">
+                <h1>Caftán de playa con aspecto de lino</h1>
+                <h2><span>$18.00</span>$13.00</h2>
+              </div>
+            </div>
+            <div class="keen-slider__slide slide">
+              <div class="body">
+                <img src="./assets/models/17.jpg" alt="">
+                <h1>Vestido largo con hombros descubiertos y volantes</h1>
+                <h2><span>$25.00</span>$9.00</h2>
+              </div>
+            </div>
+            <div class="keen-slider__slide slide">
+              <div class="body">
+                <img src="./assets/models/18.jpg" alt="">
+                <h1>Mono de pierna ancha con abertura en el busto y tirantes</h1>
+                <h2><span>$16.00</span>$13.00</h2>
+              </div>
+            </div>
+          </div>
+          <svg id="sale-arrow-left" class="arrow arrow--left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"></path>
+          </svg>
+          <svg id="sale-arrow-right" class="arrow arrow--right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"></path>
+          </svg>
+          <div id="sale-dots" class="dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="body">
+        <h1 class="title">Contacto</h1>
+        <form>
+          <label>
+            <span>Nombre</span>
+            <input name="name" type="text" required>
+          </label>
+          <label>
+            <span>Correo</span>
+            <input name="email" type="email" required>
+          </label>
+          <label>
+            <span>Mensaje</span>
+            <textarea name="message" id="" cols="30" rows="10" required></textarea>
+            <button>Enviar</button>
+          </label>
+        </form>
+        <div class="form_output dnone">Gracias por su mensaje!</div>
+      </div>
+    </section>
+
   </main>
 
   <footer>
-
+    © 2021 Lemonade.
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.js"></script>
   <script src="./js/script.js"></script>
 </body>
 </html>
