@@ -131,7 +131,8 @@ a {
 section > .body {
   max-width: 920px;
   margin: auto;
-  padding-top: 5rem;
+  padding: 5rem;
+  padding-bottom: 0;
 }
 section:last-child > .body {
   margin-bottom: 5rem;
